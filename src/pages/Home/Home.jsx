@@ -1,45 +1,109 @@
-import './Home.css';
+import { Link } from "react-router-dom";
+import "./Home.css";
 
 function Home() {
   return (
     <div className="home-container">
-      {/* Banner Principal */}
+      {/* Hero Section */}
       <section className="hero">
-        <h1>Mybro Sobremesas</h1>
-        <p>A Fábrica e Distribuidora de Felicidade em Formato de Doce.</p>
+        <div className="hero-content">
+          <h1 className="hero-title">🎂 MyBro</h1>
+          <p className="hero-subtitle">
+            Fábrica e Distribuidora de Sobremesas Premium
+          </p>
+          <p className="hero-description">
+            A felicidade em formato de doce. Pudins artesanais e Petit Gâteaux
+            de confeitaria para sua mesa.
+          </p>
+          <Link to="/produtos" className="cta-button">
+            Ver Catálogo de Produtos
+          </Link>
+        </div>
+        <div className="hero-overlay"></div>
       </section>
 
-      {/* Texto de Apresentação (Lero-Lero) */}
+      {/* Seção de Apresentação */}
       <section className="about-factory">
-        <h2>Nossa Produção Industrial</h2>
-        <p>
-          Fundada com o objetivo de revolucionar o mercado de *food service*, a Mybro é especialista 
-          na fabricação em larga escala de Pudins artesanais e Petit Gateaus premium. Nossa fábrica 
-          utiliza tecnologia de ponta para garantir que cada sobremesa mantenha a textura perfeita 
-          e o sabor caseiro que seus clientes exigem.
-        </p>
-        <p>
-          Como distribuidores, atendemos desde pequenos cafés até grandes redes de restaurantes e 
-          hotéis. Nosso processo de logística refrigerada garante a integridade do produto, permitindo 
-          que o seu estabelecimento sirva uma sobremesa de alta confeitaria com a praticidade de um 
-          produto pronto para o consumo.
-        </p>
+        <div className="section-content">
+          <h2>Nossa História</h2>
+          <p>
+            Na MyBro, transformamos ingredientes selecionados em experiências memoráveis. 
+            Nossa produção artesanal garante o sabor de "feito em casa" com a escala 
+            necessária para atender o seu negócio.
+          </p>
+          <p>
+            Desde a fundação em Belo Horizonte, nosso compromisso é com a excelência 
+            e a pontualidade, tornando-nos parceiros estratégicos de restaurantes e buffets.
+          </p>
+        </div>
       </section>
 
-      {/* Sessão Extra para dar Scroll (Rolar a página) */}
-      <section className="distribuicao">
-        <h3>Por que ser um parceiro Mybro?</h3>
-        <ul>
-          <li><strong>Pudim de Leite Condensado:</strong> Receita exclusiva com calda caramelizada no ponto exato.</li>
-          <li><strong>Petit Gateau:</strong> Recheio cremoso e explosivo, desenvolvido para o forno rápido.</li>
-          <li><strong>Logística Eficiente:</strong> Entregas programadas para que nunca falte estoque.</li>
-          <li><strong>Padrão de Qualidade:</strong> Rigoroso controle sanitário e seleção de ingredientes.</li>
-        </ul>
+      {/* Diferenciais */}
+      <section className="differentials">
+        <h2>Por Que Ser Parceiro Mybro?</h2>
+        <div className="differentials-grid">
+          <div className="differential-item">
+            <div className="differential-icon">✨</div>
+            <h4>Qualidade Premium</h4>
+            <p>Rigoroso controle sanitário e seleção dos melhores ingredientes.</p>
+          </div>
+          <div className="differential-item">
+            <div className="differential-icon">🚚</div>
+            <h4>Logística Eficiente</h4>
+            <p>Entregas programadas com frota refrigerada para garantir o frescor.</p>
+          </div>
+          <div className="differential-item">
+            <div className="differential-icon">💰</div>
+            <h4>Preços de Atacado</h4>
+            <p>Margens competitivas comprando diretamente da fábrica.</p>
+          </div>
+          <div className="differential-item">
+            <div className="differential-icon">🤝</div>
+            <h4>Suporte Consultivo</h4>
+            <p>Equipe pronta para ajudar no sucesso do seu estabelecimento.</p>
+          </div>
+        </div>
       </section>
 
-      <section className="contato-breve">
-        <h2>Leve nossas sobremesas para o seu negócio!</h2>
-        <p>Atendemos toda a região com preços de atacado direto da fábrica.</p>
+      {/* Chamada para Ação Final */}
+      <section className="final-cta">
+        <h2>Explore Nossa Linha Completa</h2>
+        <p>Acesse nosso catálogo ou entre em contato para soluções personalizadas.</p>
+        <div className="cta-buttons">
+          <Link to="/produtos" className="btn btn-primary">
+            Ver Catálogo
+          </Link>
+          <Link to="/contato" className="btn btn-secondary">
+            Entre em Contato
+          </Link>
+        </div>
+      </section>
+
+      {/* Contato Rápido */}
+      <section className="quick-contact">
+        <div className="contact-item">
+          <span className="contact-icon">📧</span>
+          <div>
+            <p className="contact-label">Email</p>
+            <a href="mailto:mymrbro@gmail.com">mymrbro@gmail.com</a>
+          </div>
+        </div>
+        <div className="contact-item">
+          <span className="contact-icon">📱</span>
+          <div>
+            <p className="contact-label">WhatsApp</p>
+            <a href="https://wa.me/5531997678637" target="_blank" rel="noreferrer">
+              (31) 99767-8637
+            </a>
+          </div>
+        </div>
+        <div className="contact-item">
+          <span className="contact-icon">📍</span>
+          <div>
+            <p className="contact-label">Localização</p>
+            <p>Belo Horizonte, MG</p>
+          </div>
+        </div>
       </section>
     </div>
   );

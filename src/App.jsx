@@ -1,16 +1,28 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+
 import Home from './pages/Home/Home';
+
+import Produtos from './pages/Produtos/Produtos'; 
+import Sobre from './pages/Sobre/Sobre';  
+import Contato from './pages/Contato/Contato'; 
 
 function App() {
   return (
-    <footer>
+    <Router>
       <Navbar />
       <main>
-      <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/produtos" element={<Produtos />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/contato" element={<Contato />} />
+          <Route path="*" element={<h1>Página não encontrada (404)</h1>} />
+        </Routes>
       </main>
-      <Footer />  
-    </footer>
+      <Footer />
+    </Router>
   );
 }
 

@@ -1,0 +1,44 @@
+.home-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.6; /* Melhora a leitura do texto */
+  color: #333;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #5d4037; /* Um tom de chocolate/caramelo */
+}
+
+h2, h3 {
+  margin-top: 30px;
+  color: #795548;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.contato-breve {
+  text-align: center;
+  padding: 40px;
+  border-top: 1px solid #eee;
+}
