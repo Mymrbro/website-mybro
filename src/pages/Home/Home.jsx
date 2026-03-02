@@ -1,110 +1,95 @@
 import { Link } from "react-router-dom";
+
 import "./Home.css";
 
 function Home() {
   return (
-    <div className="home-container">
-      {/* Hero Section */}
+    <div className="home">
+
+      {/* HERO */}
       <section className="hero">
         <div className="hero-content">
-          <h1 className="hero-title">🎂 MyBro</h1>
-          <p className="hero-subtitle">
+          <h1>MyBro</h1>
+          <p className="hero-highlight">
             Fábrica e Distribuidora de Sobremesas Premium
           </p>
-          <p className="hero-description">
-            A felicidade em formato de doce. Pudins artesanais e Petit Gâteaux
-            de confeitaria para sua mesa.
+          <p>
+            Produção artesanal em escala profissional para restaurantes,
+            buffets e cafeterias.
           </p>
-          <Link to="/produtos" className="cta-button">
-            Ver Catálogo de Produtos
+
+          <div className="hero-buttons">
+            <Link to="/produtos" className="btn btn-primary">
+              Ver Catálogo
+            </Link>
+            <Link to="/contato" className="btn btn-outline">
+              Falar com Comercial
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SOBRE RESUMIDO */}
+      <section className="about-preview">
+        <div className="container">
+          <h2>Excelência desde Belo Horizonte</h2>
+          <p>
+            Transformamos ingredientes selecionados em experiências memoráveis.
+            Nosso foco é ajudar seu estabelecimento a vender mais com
+            sobremesas de alto padrão.
+          </p>
+        </div>
+      </section>
+
+      {/* PRODUTOS DESTAQUE */}
+      <section className="featured-products">
+        <div className="container">
+          <h2>Nossos Destaques</h2>
+
+          <div className="products-grid">
+            <div className="product-card">
+              <h4>Pudim Artesanal</h4>
+              <p>Textura cremosa e sabor marcante.</p>
+            </div>
+
+            <div className="product-card">
+              <h4>Petit Gâteau</h4>
+              <p>Recheio cremoso e padrão confeitaria.</p>
+            </div>
+
+            <div className="product-card">
+              <h4>Tortas Especiais</h4>
+              <p>Sabores variados para encantar clientes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* B2B */}
+      <section className="b2b">
+        <div className="container">
+          <h2>Parceria Estratégica para Restaurantes</h2>
+          <p>
+            Oferecemos preços de atacado, logística refrigerada e suporte
+            consultivo para aumentar sua margem de lucro.
+          </p>
+
+          <Link to="/contato" className="btn btn-primary">
+            Seja um Parceiro
           </Link>
         </div>
-        <div className="hero-overlay"></div>
       </section>
 
-      {/* Seção de Apresentação */}
-      <section className="about-factory">
-        <div className="section-content">
-          <h2>Nossa História</h2>
-          <p>
-            Na MyBro, transformamos ingredientes selecionados em experiências memoráveis. 
-            Nossa produção artesanal garante o sabor de "feito em casa" com a escala 
-            necessária para atender o seu negócio.
-          </p>
-          <p>
-            Desde a fundação em Belo Horizonte, nosso compromisso é com a excelência 
-            e a pontualidade, tornando-nos parceiros estratégicos de restaurantes e buffets.
-          </p>
-        </div>
-      </section>
-
-      {/* Diferenciais */}
-      <section className="differentials">
-        <h2>Por Que Ser Parceiro Mybro?</h2>
-        <div className="differentials-grid">
-          <div className="differential-item">
-            <div className="differential-icon">✨</div>
-            <h4>Qualidade Premium</h4>
-            <p>Rigoroso controle sanitário e seleção dos melhores ingredientes.</p>
-          </div>
-          <div className="differential-item">
-            <div className="differential-icon">🚚</div>
-            <h4>Logística Eficiente</h4>
-            <p>Entregas programadas com frota refrigerada para garantir o frescor.</p>
-          </div>
-          <div className="differential-item">
-            <div className="differential-icon">💰</div>
-            <h4>Preços de Atacado</h4>
-            <p>Margens competitivas comprando diretamente da fábrica.</p>
-          </div>
-          <div className="differential-item">
-            <div className="differential-icon">🤝</div>
-            <h4>Suporte Consultivo</h4>
-            <p>Equipe pronta para ajudar no sucesso do seu estabelecimento.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Chamada para Ação Final */}
+      {/* CTA FINAL */}
       <section className="final-cta">
-        <h2>Explore Nossa Linha Completa</h2>
-        <p>Acesse nosso catálogo ou entre em contato para soluções personalizadas.</p>
-        <div className="cta-buttons">
-          <Link to="/produtos" className="btn btn-primary">
-            Ver Catálogo
-          </Link>
-          <Link to="/contato" className="btn btn-secondary">
-            Entre em Contato
-          </Link>
-        </div>
+        <h2>Pronto para elevar seu cardápio?</h2>
+        <p>Entre em contato agora e receba nossa tabela comercial.</p>
+
+        <Link to="/contato" className="btn btn-primary">
+          Solicitar Proposta
+        </Link>
       </section>
 
-      {/* Contato Rápido */}
-      <section className="quick-contact">
-        <div className="contact-item">
-          <span className="contact-icon">📧</span>
-          <div>
-            <p className="contact-label">Email</p>
-            <a href="mailto:mymrbro@gmail.com">mymrbro@gmail.com</a>
-          </div>
-        </div>
-        <div className="contact-item">
-          <span className="contact-icon">📱</span>
-          <div>
-            <p className="contact-label">WhatsApp</p>
-            <a href="https://wa.me/5531997678637" target="_blank" rel="noreferrer">
-              (31) 99767-8637
-            </a>
-          </div>
-        </div>
-        <div className="contact-item">
-          <span className="contact-icon">📍</span>
-          <div>
-            <p className="contact-label">Localização</p>
-            <p>Belo Horizonte, MG</p>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

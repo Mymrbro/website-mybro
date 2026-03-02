@@ -83,7 +83,7 @@ function Footer() {
         <div className="footer-section">
           <h4 className="footer-subtitle">Contato</h4>
           <p className="footer-contact">
-            📧 <a href="mailto:mymrbro@gmail.com">mymrbro@gmail.com</a>
+            📧 <a href="mailto:mailto:mymrbro@gmail.com?subject=Contato%20Comercial%20MyBro">mymrbro@gmail.com</a>
           </p>
           <p className="footer-contact">
             📱 <a href="tel:+553199767-8637">(31) 99767-8637</a>

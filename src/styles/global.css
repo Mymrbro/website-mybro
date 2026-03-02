@@ -1,0 +1,65 @@
+/* =========================
+   🎨 DESIGN SYSTEM - MYBRO
+========================= */
+
+:root {
+  /* ===== CORES PRINCIPAIS ===== */
+  --color-primary: #6b3410;
+  --color-primary-light: #8b4513;
+  --color-secondary: #e7ddd3;
+  --color-background: #f8f5f2;
+  --color-white: #ffffff;
+  --color-dark: #2b1a0f;
+  --color-gray: #777;
+
+  /* ===== GRADIENTES ===== */
+  --gradient-primary: linear-gradient(135deg, #6b3410, #8b4513);
+  --gradient-light: linear-gradient(135deg, #f2ebe5, #e7ddd3);
+
+  /* ===== SOMBRAS ===== */
+  --shadow-soft: 0 5px 15px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+  /* ===== BORDAS ===== */
+  --radius-sm: 8px;
+  --radius-md: 15px;
+  --radius-lg: 30px;
+
+  /* ===== TRANSIÇÕES ===== */
+  --transition: all 0.3s ease;
+}
+
+/* =========================
+   BOTÕES PADRÃO
+========================= */
+
+.btn {
+  padding: 14px 30px;
+  border-radius: var(--radius-lg);
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--gradient-primary);
+  color: var(--color-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-medium);
+}
+
+.btn-outline {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-outline:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}

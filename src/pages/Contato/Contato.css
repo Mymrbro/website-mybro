@@ -1,44 +1,110 @@
-.home-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  line-height: 1.6; /* Melhora a leitura do texto */
-  color: #333;
+.contato-page {
+  background: var(--color-background);
 }
 
-.hero {
+/* HERO */
+.contato-hero {
+  background: var(--gradient-primary);
+  color: white;
   text-align: center;
-  padding: 60px 0;
-  background-color: #f8f8f8;
-  border-radius: 10px;
-  margin-bottom: 40px;
+  padding: 80px 20px;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  color: #5d4037; /* Um tom de chocolate/caramelo */
-}
-
-h2, h3 {
-  margin-top: 30px;
-  color: #795548;
-}
-
-p {
-  margin-bottom: 20px;
-}
-
-ul {
-  margin-left: 20px;
-  margin-bottom: 30px;
-}
-
-li {
+.contato-hero h1 {
+  font-size: 2.8rem;
   margin-bottom: 10px;
 }
 
-.contato-breve {
-  text-align: center;
-  padding: 40px;
-  border-top: 1px solid #eee;
+.contato-hero p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* CONTEÚDO */
+.contato-content {
+  padding: 80px 20px;
+}
+
+.contato-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+/* INFORMAÇÕES */
+.contato-info h2 {
+  margin-bottom: 25px;
+  color: var(--color-dark);
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.info-item a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.info-item p {
+  margin: 0;
+  color: var(--color-dark);
+  font-weight: 500;
+}
+
+.contato-whatsapp {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+/* FORMULÁRIO */
+.contato-form h2 {
+  margin-bottom: 25px;
+  color: var(--color-dark);
+}
+
+.contato-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contato-form input,
+.contato-form textarea {
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(107, 52, 16, 0.2);
+}
+
+.contato-form button {
+  margin-top: 10px;
+  border: none;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .contato-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contato-hero h1 {
+    font-size: 2.2rem;
+  }
 }
