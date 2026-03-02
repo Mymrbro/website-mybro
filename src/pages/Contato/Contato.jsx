@@ -18,7 +18,7 @@ function Contato() {
 
             <div className="info-item">
               <span>📧</span>
-              <a href="mailto:mymrbro@gmail.com">mymrbro@gmail.com</a>
+              <a href="mailto:mymrbro@gmail.com?subject=Contato%20Comercial%20MyBro">mymrbro@gmail.com</a>
             </div>
 
             <div className="info-item">

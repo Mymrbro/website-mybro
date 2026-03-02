@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link } from "react-router-dom" // Importe o Link aqui
+import { Link } from "react-router-dom"
 import "./Navbar.css"
 
 function Navbar() {
@@ -16,7 +16,16 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-logo">
-        <Link to="/" onClick={handleLinkClick} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
+        <Link
+          to="/"
+          onClick={handleLinkClick}
+          style={{
+            textDecoration: "none",
+            color: "inherit",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
           <span className="logo-emoji">🍰</span>
           MyBro
         </Link>
@@ -48,7 +57,7 @@ function Navbar() {
 
       {/* Botão de Ação */}
       <div className="nav-actions">
-        <Link to="/orcamento" className="btn-orcamento" onClick={handleLinkClick}>
+        <Link to="/contato" className="btn-orcamento" onClick={handleLinkClick}>
           Orçamento
         </Link>
       </div>

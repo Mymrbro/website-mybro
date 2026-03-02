@@ -1,0 +1,52 @@
+.notfound-page {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-light);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.notfound-container {
+  max-width: 600px;
+}
+
+.error-code {
+  font-size: 7rem;
+  font-weight: 900;
+  margin: 0;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.notfound-container h2 {
+  font-size: 2rem;
+  margin: 20px 0 10px;
+  color: var(--color-dark);
+}
+
+.notfound-container p {
+  font-size: 1.1rem;
+  color: var(--color-gray);
+  margin-bottom: 40px;
+}
+
+.notfound-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .error-code {
+    font-size: 4.5rem;
+  }
+
+  .notfound-container h2 {
+    font-size: 1.5rem;
+  }
+}

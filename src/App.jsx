@@ -12,6 +12,8 @@ import Produtos from './pages/Produtos/Produtos';
 import Sobre from './pages/Sobre/Sobre';  
 import Contato from './pages/Contato/Contato'; 
 
+import NotFound from "./pages/NotFound/NotFound";
+
 function App() {
   return (
     <Router>
@@ -22,7 +24,7 @@ function App() {
           <Route path="/produtos" element={<Produtos />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/contato" element={<Contato />} />
-          <Route path="*" element={<h1>Página não encontrada (404)</h1>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <WhatsAppButton />

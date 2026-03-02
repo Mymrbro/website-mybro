@@ -4,14 +4,31 @@
 
 :root {
   /* ===== CORES PRINCIPAIS ===== */
-  --color-primary: #6b3410;
+  --color-primary: #421d04;
   --color-primary-light: #8b4513;
   --color-secondary: #e7ddd3;
   --color-background: #f8f5f2;
   --color-white: #ffffff;
-  --color-dark: #2b1a0f;
-  --color-gray: #777;
+  --color-dark: #352012;
+  --color-gray: #b1adad;
+  
+  /* Layout base */
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+  }
 
+  .layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    flex: 1;
+  }
   /* ===== GRADIENTES ===== */
   --gradient-primary: linear-gradient(135deg, #6b3410, #8b4513);
   --gradient-light: linear-gradient(135deg, #f2ebe5, #e7ddd3);
